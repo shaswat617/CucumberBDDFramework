@@ -1,0 +1,73 @@
+Two types of Regular expressions in cucumber :
+
+1. Regular Expression - [0-9]+, (\\d+)
+2. Cucumber expression - {string}, {int}
+
+Rules :
+1. Step def file is willing to generate cucumber expression by default
+2. But we can use regular expression also in step def file
+3. We can mix both Cucumber expression and regular expression in step def file
+4. But we cannot mix both expressions in a step def file
+
+{string} --> cucumber expression
+
+Regular expressions :
+([0-9]) -> capture group --> 0 to 9 digits appear
+
+Quantifiers in reg expression: * + ? {}
+Defines how many characters the expression should have
+([0-9]+) -> 0 to 9 digits appear (atlease one or more) -> 1, 22, 333, 33, 3455324
+([0-9]{4}) -> 0000, 3453, 2321, 3433
+([0-9]*) -> zero or more : int s;
+([0-9]?) -> zero or once : 0, 1, 4, 5, int s;
+
+=========================================
+digit - d
+\d = single digit - 1, 2, 0, 5
+\d+ = once or more - 1, 22, 444, 9101
+\d* = zero or more - int s, 3, 234, 23423
+\d? = zero or once - int s, 1, 2, 3
+\d{2} = 12, 23, 35
+
+----------------------------------------
+word - w
+1. a - z
+2. A - Z
+3. 0 - 9
+4. Underscore _
+
+\w = single word character : a, b, t, q
+\w+ = once or more : a, g, go, ten, nest
+\w* = zero or more : String s = "", a, g, go, ten, nest
+\w? = zero or once : String s = "", a, h, y
+\w{2} = go, hi, wt, gh
+
+\W = anything apart from single word character : @, $, %, $
+\W+ = anything apart from w [once or more] : ##, $, &&&, @@@@@
+\W* = anything apart from w [ zero or more ] : "", ", "\""
+\W? = anything apart from w [zero or once] : "", , , #
+\W{2} = anything apart from w : ##, @@, %%
+
+https://www.regular-expressions.info/refshorthand.html
+
+https://www.oreilly.com/library/view/java-9-regular/9781787288706/f42e3a54-7bb2-4db3-bdaa-2188d8f49946.xhtml
+
+^ = caret
+Validate if the regex is correct : https://regex101.com/
+
+(\d) = ([0-9])
+(\d+) = ([0-9]+)
+(\d*) = ([0-9]*)
+(\d{2}) = ([0-9]{2})
+(\d?) = ([0-9]?)
+
+
+1. Amazon basic [DONE]
+2. Uber basic [DONE]
+3. Flight booking with multiple scenarios - mvn test [DONE]
+4. Vegetable buying with cucumber exp and regex [DONE]
+5. Tags with buying Flats - maven
+
+Command to run the test runner file through maven :
+mvn test -Dcucumber.fiter.reports='@Regression'
+

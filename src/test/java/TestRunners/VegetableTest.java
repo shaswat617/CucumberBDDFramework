@@ -6,11 +6,9 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "/home/rocky/Documents/CucumberBDDFramework/src/test/resources/AppFeatures/search.feature",
+        features = "/home/rocky/Documents/CucumberBDDFramework/src/test/resources/AppFeatures/vegetable_buying.feature",
         glue = "StepDefinitions",
         plugin = {"pretty"}
 )
-
-public class AmazonTest {
-
+public class VegetableTest {
 }
