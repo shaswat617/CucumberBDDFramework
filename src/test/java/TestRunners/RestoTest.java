@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        features = "/home/rocky/Documents/CucumberBDDFramework/src/test/resources/AppFeatures/buy_flat.feature",
-        glue = "StepDefinitions",
+        features = "/home/rocky/Documents/CucumberBDDFramework/src/test/resources/AppFeatures/restaurant_table.feature",
+        glue = {"StepDefinitions","hooks"},
         plugin = {"pretty"}
 )
-public class BuyFlatTest {
+public class RestoTest {
 
 }
