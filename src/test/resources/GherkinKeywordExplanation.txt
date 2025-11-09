@@ -1,0 +1,19 @@
+Given : Preconditions are mentioned within Given Keyword
+ - The steps of the given keyword puts the system into a known state
+    which is necessary for the user action
+ - Avoid talking about user interaction in given actions
+
+When : The purpose of when steps is to describe the user actions.
+
+Then :
+The purpose of Then steps is to observe the expected output.
+The observations should be related to the business value / benefit of your feature description.
+
+But :
+This is used for statements that are in addition to previous steps and represent -ve statements.
+
+And :
+This is used for statements that are in addition to previous steps and represent +ve statements.
+
+In a step definition file, And & But are listed as Given / When / Then, the keyword that they appear after.
+There are no And & But keywords in step definition file.

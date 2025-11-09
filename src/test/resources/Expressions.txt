@@ -16,7 +16,7 @@ Regular expressions :
 
 Quantifiers in reg expression: * + ? {}
 Defines how many characters the expression should have
-([0-9]+) -> 0 to 9 digits appear (atlease one or more) -> 1, 22, 333, 33, 3455324
+([0-9]+) -> 0 to 9 digits appear (at least one or more) -> 1, 22, 333, 33, 3455324
 ([0-9]{4}) -> 0000, 3453, 2321, 3433
 ([0-9]*) -> zero or more : int s;
 ([0-9]?) -> zero or once : 0, 1, 4, 5, int s;
@@ -69,9 +69,11 @@ Validate if the regex is correct : https://regex101.com/
 5. Tags with buying Flats - maven
 
 Command to run the test runner file through maven :
-mvn test -Dcucumber.fiter.reports='@Regression'
+mvn test -Dcucumber.filter.reports='@Regression'
 
 Zomato food booking : Enhanced background []
 Bottle filling machine : enhanced tags [DONE]
-Restaurant table booking - hooks [DONE]
+Restaurant table booking - hooks without tags [DONE]
 
+Visiting temple - hooks with tags [ ]
+Watching movie - hooks with steps
