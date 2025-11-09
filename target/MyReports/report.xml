@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="0.412" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-10-28T08:01:52.741237090Z">
+<testcase classname="Login Features" name="Login pass - happy flow - #1.1" time="0.07">
+<system-out><![CDATA[
+Given user is an application landing page...................................passed
+When user clicks on Sign in button..........................................passed
+Then user is displayed login screen.........................................passed
+When user enters "Soham" in username field..................................passed
+And user enters "pass76" in password field..................................passed
+And user clicks on sign in..................................................passed
+Then user is able to login successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Features" name="Login pass - happy flow - #1.2" time="0.004">
+<system-out><![CDATA[
+Given user is an application landing page...................................passed
+When user clicks on Sign in button..........................................passed
+Then user is displayed login screen.........................................passed
+When user enters "Alivia" in username field.................................passed
+And user enters "pass35" in password field..................................passed
+And user clicks on sign in..................................................passed
+Then user is able to login successfully.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Features" name="Login fail - negative flow - #1.1" time="0.004">
+<system-out><![CDATA[
+Given user is an application landing page...................................passed
+When user clicks on Sign in button..........................................passed
+Then user is displayed login screen.........................................passed
+When user enters "incorrectUserName" in username field......................passed
+And user enters "pass76" in password field..................................passed
+And user clicks on sign in..................................................passed
+Then user is not able to login successfully.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login Features" name="Login fail - negative flow - #1.2" time="0.003">
+<system-out><![CDATA[
+Given user is an application landing page...................................passed
+When user clicks on Sign in button..........................................passed
+Then user is displayed login screen.........................................passed
+When user enters "Alivia" in username field.................................passed
+And user enters "incorrectPassword" in password field.......................passed
+And user clicks on sign in..................................................passed
+Then user is not able to login successfully.................................passed
+]]></system-out>
+</testcase>
+</testsuite>
